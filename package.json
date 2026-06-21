@@ -1,0 +1,19 @@
+{
+  "name": "saucedemo-playwright-bdd-ui-api-accessibility",
+  "version": "1.0.0",
+  "description": "Playwright Cucumber (BDD) with POM Utilities, UI + API, Axe scenarios.",
+  "scripts": {
+    "test": "node run-tests.js",
+    "test:ui": "node run-tests.js --tags @ui",
+    "test:api": "node run-tests.js --tags @api",
+    "test:accessibility": "node run-tests.js --tags @accessibility",
+    "report": "start test-results/cucumber_report.html"
+},
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.1.0",
+    "chai": "^4.4.1",
+    "playwright": "^1.46.0",
+    "axe-playwright": "^1.2.3",
+    "cucumber-html-reporter": "^7.1.1"
+  }
+}
